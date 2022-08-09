@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MasterGps">
+
+    <fragment
+        android:id="@+id/Map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/gps_logo"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/hidog" />
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gps_logo"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="산책시간 : 00:00:00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_timer"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="산책거리 : 0 m "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_distance"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="산책 요금 : 0 원"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/btn_mypet_location"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="360dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/rebtn" />
+
+</RelativeLayout>

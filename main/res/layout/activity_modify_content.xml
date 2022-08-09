@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".View_Content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/modify_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#3E3E3E"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/modify_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성자"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ㅡ  ㅡ  ㅡ  ㅡ  ㅡ  ㅡ  ㅡ  ㅡ  ㅡ  ㅡ  ㅡ  ㅡ  ㅡ  ㅡ  ㅡ  ㅡ  ㅡ  ㅡ  ㅡ" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/modify_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <EditText
+            android:id="@+id/modify_content"
+            android:layout_width="390dp"
+            android:layout_height="300dp"
+            android:scrollbars="vertical"
+            android:textColor="#3E3E3E"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/delete_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="첨부된 이미지 삭제" />
+
+        <Button
+            android:id="@+id/btn_modify_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3C3C3C"
+            android:layout_marginLeft="10dp"
+            android:text="수정"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

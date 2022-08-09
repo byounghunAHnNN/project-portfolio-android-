@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_selectionColor="#FFD0CF"
+        app:mcv_showOtherDates="defaults"
+        tools:context=".Calendar" />
+
+    <TextView
+        android:id="@+id/view_memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="메모 가져와서 보여주기" />
+
+    <Button
+        android:id="@+id/write_memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:backgroundTint="#3c3c3c"
+        android:textColor="#FFFFFF"
+        android:text="메모작성" />
+</LinearLayout>

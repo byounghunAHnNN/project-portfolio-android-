@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Write">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/write_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="제목" />
+
+        <EditText
+            android:id="@+id/write_content"
+            android:layout_width="380dp"
+            android:layout_height="400dp"
+            android:hint="내용을 입력하세요" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/write_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <ImageButton
+                android:id="@+id/btn_img_upload"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="100dp"
+                android:backgroundTint="#FFFFFF"
+                android:scaleType="fitXY"
+                android:src="@drawable/uploadicon" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#3C3C3C"
+            android:text="올리기"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".memo_layout">
+
+    <EditText
+        android:id="@+id/my_memo"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
+        android:textSize="15sp"
+        android:text="작성한 메모 보여줌 " />
+
+    <TextView
+        android:id="@+id/time_memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="메모 작성 날짜" />
+
+    <TextView
+        android:id="@+id/btn_modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="수정"
+        android:textColor="#3E3E3E"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#3E3E3E"
+        android:text="삭제"
+        android:textSize="15sp" />
+</LinearLayout>

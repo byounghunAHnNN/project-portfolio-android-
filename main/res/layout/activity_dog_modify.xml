@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".DogModify">
+
+
+   <ImageView
+        android:id="@+id/my_pet_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/h5" />
+
+    <TextView
+        android:id="@+id/dog_img_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="사진 업로드" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="강아지 이름" />
+
+            <EditText
+                android:id="@+id/dog_info_name"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="유저 강아지 이름" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="견종" />
+
+            <EditText
+                android:id="@+id/dog_info_type"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="견종 입력" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="크기" />
+
+            <EditText
+                android:id="@+id/dog_info_size"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="크기 입력" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="몸무게" />
+
+            <EditText
+                android:id="@+id/dog_info_weight"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="몸무게 입력" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="특이사항" />
+
+            <EditText
+                android:id="@+id/dog_info_unique"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="우리 강아지는 지랄맞아요" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_doginfo_modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#3C3C3C"
+        android:text="정보 수정"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_gps"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Gps">
+
+    <fragment
+        android:id="@+id/Map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_timer_start"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#3C3C3C"
+            android:text="시작"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_timer_finish"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#3C3C3C"
+            android:text="일시정지"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_timer_reset"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#3C3C3C"
+            android:text="리셋"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/gps_logo"
+        android:layout_width="300dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/loadimg" />
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gps_logo"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="산책시간 : 00:00:00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_timer"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="산책거리 : 0 m "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_distance"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="산책 요금 : 0 원"
+        android:textSize="20sp" />
+
+</RelativeLayout>
